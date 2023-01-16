@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- css cumstom -->
+    <link rel="stylesheet" href="assets/css/quizz.css" />
+    <title>Thi trắc nghiệm - Online</title>
+  </head>
+
+  <body>
+    <!-- navbar header slider  -->
+    <div
+      class="container"
+      include-html="site/navbar.html"
+      style="border-bottom: 1px solid #eeeeee; display: block"
+    ></div>
+    <!-- content  -->
+    <div class="tab-content">
+      <!-- trang chủ  -->
+      <div
+        id="trang-chu"
+        include-html="site/home.html"
+        class="tab-pane fade in active"
+      ></div>
+      <!-- trang giới thiệu  -->
+      <div
+        id="gioi-thieu"
+        include-html="site/about.html"
+        class="tab-pane fade"
+      ></div>
+      <!-- trang liên hệ  -->
+      <div
+        id="lien-he"
+        include-html="site/contact.html"
+        class="tab-pane fade"
+      ></div>
+      <!-- trang góp ý -->
+      <div
+        id="gop-y"
+        include-html="site/feedback.html"
+        class="tab-pane fade"
+      ></div>
+      <!-- trang hỏi đáp -->
+      <div
+        id="hoi-dap"
+        include-html="site/answer.html"
+        class="tab-pane fade"
+      ></div>
+      <!-- modal đăng nhập  -->
+      <div
+        class="modal fade"
+        id="my-modal-login"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="my-modal-login-label"
+        include-html="site/login.html"
+        class="tab-pane fade"
+        style="height: 100%"
+      ></div>
+      <!-- modal đăng ký  -->
+      <div
+        class="modal fade"
+        id="my-modal-register"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="my-modal-register-label"
+        include-html="site/register.html"
+      ></div>
+      <!-- modal đổi mật khẩu -->
+      <div
+        class="modal fade"
+        id="my-modal-change-password"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="my-modal-change-password-label"
+        include-html="site/change-password.html"
+      ></div>
+      <!-- modal quên mật khẩu -->
+      <div
+        class="modal fade"
+        id="my-modal-forgot-password"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="my-modal-forgot-password-label"
+        include-html="site/forgot-password.html"
+      ></div>
+      <!-- modal cập nhật tài khoản  -->
+      <div
+        class="modal fade"
+        id="my-modal-update-accout"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="my-modal-update-accout-label"
+        include-html="site/update-accout.html"
+      ></div>
+      <!-- trang tất cả môn học  -->
+      <div
+        id="subjects"
+        include-html="site/subjects.html"
+        class="tab-pane fade"
+      ></div>
+      <!-- trang làm bài thi -->
+      <div
+        id="quizz"
+        include-html="site/quizz.html"
+        class="tab-pane fade"
+      ></div>
+      <!-- <div id="android" class="tab-pane fade">
+
+    </div>
+    <div id="web" class="tab-pane fade">
+
+    </div>
+    <div id="game" class="tab-pane fade">
+
+    </div> -->
+    </div>
+    <!-- fooer (chân trang) -->
+    <footer include-html="site/footer.html"></footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- js thêm các đoạn html tự file khác vào -->
+    <script src="controller/include.js"></script>
+    <!-- js quên mật khẩu ( hiện tại ẩn hiện các form ) -->
+    <script src="controller/forgot_password.js"></script>
+    <!-- js chuyển câu hỏi  -->
+    <script src="controller/quizz.js"></script>
+
+    <!-- <script src="controller/onclick-include.js"></script> -->
+    <!-- js textarea  -->
+    <!-- <script src="https://cdn.ckeditor.com/ckeditor5/35.4.0/classic/ckeditor.js"></script> -->
+  </body>
+</html>
